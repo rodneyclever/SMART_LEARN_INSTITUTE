@@ -12,7 +12,7 @@ WEBSITE FILES FOR SMART LEARN INSTITUTE
 ## How to Run
 1. Copy folder into xampp/htdocs
 2. Start Apache and MySQL
-3. Import assignment.sql,users.sql,courses.sql into phpMyAdmin
+3. Import smartlearn.sql into phpMyAdmin
 4. Open localhost/smartlearn
 
 ## Features
