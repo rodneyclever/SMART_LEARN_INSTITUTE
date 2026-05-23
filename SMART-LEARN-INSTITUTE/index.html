@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <!--meta tags--> 
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width , initial-scale = 1.0">
+        <meta name = "description" content = "SMART LEARN INSTITUTE LOGIN PAGE">
+        
+        <!--link tags-->
+        <link rel = "shortcut-icon" href="./assets/img/favicon.jpg" type="image/x-icon">
+        <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        
+        <!--title tag-->
+        <title>SMART LEARN INSTITUTE LOGIN PAGE</title>
+    </head>
+    <body>
+
+        <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="left-login">
+
+      <div class="lock-circle">
+       <i class="fa-solid fa-laptop"></i>
+      </div>
+
+      <div class="title-login">
+        SMART LEARNING INSTITUTE
+      </div>
+
+      <div class="subtitle-login">
+        Empowering Minds, Transforming Futures
+      </div>
+
+      <div class="hashtags-login">
+       #smartlearninstitute@2026
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-login">
+
+      <div class = "login-box">
+        <form action="authenticate.php" method="post" class="login-form">
+          <div class="login-header">Login</div>
+        <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <input type="text"  name = "username" placeholder="Username" id = "username" autocomplete="off" required>
+        </div>
+
+        <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+          <input type="password"  name = "password" placeholder="Password" id = "password" required>
+        </div>
+
+       <button type="submit" 
+        name="login" 
+        value="Login" 
+        class="login-btn">
+    Login
+</button>
+        
+         <div class = "register"> 
+          <p>No Account? <a onclick="showSignupModal()">Register</a></p>
+        </div>
+         </form>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+              <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <h2 style="color:blue; margin-bottom:25px;">CREATE ACCOUNT</h2>
+
+      <form action="register.php" method="POST" autocomplete="off">
+        <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <input type="text"  name = "fullname" placeholder="Fullname" id = "fullname" autocomplete="off" required>
+        </div>
+       <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <input type="text"  name = "username" placeholder="Username" id = "username" autocomplete="off" required>
+        </div>
+
+      <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+
+          <input type="email"  name = "email" placeholder="Your email" id = "email" required>
+        </div>
+      <div class="input-group">
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <input type="password"  name = "password" placeholder="Password" id = "password" required>
+        </div>
+      <button class="login-btn" onclick="createAccount()">Create Account</button>
+      <p onclick="hideSignupModal()">Back to Login</p>
+      </form>
+    </div>
+  </div>
+
+   <!-- Particles.js Script-->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/particles-config.js"></script> 
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

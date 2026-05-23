@@ -1,0 +1,95 @@
+body {
+  height: 100vh;
+  
+  font-family: 'Arial', sans-serif;
+  color: white;
+  position: relative;
+  height:100vh;
+ 
+}
+
+
+/* Particles Container */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, #0f172a, #1e2937); /* nice dark bg */
+}
+
+#materials {
+   height: 100vh;
+    min-height: 100vh;
+     z-index: 2;
+    position: relative;
+}
+
+.imagecourse {  
+
+    height: 300px;
+    border-radius: 20px;
+    background-image: url('library.jpg');
+}
+
+.materials-overlay {
+    background: none;
+    min-height: 100vh;
+    padding: 10px 30px;
+  
+    
+}
+
+.materials-overlay h1{  
+      color: yellow;
+}
+
+.materials-overlay p{   
+    color: blue;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.material-card {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.material-card:hover {
+    transform: translateY(-8px);
+    background: rgba(50, 50, 50, 0.98);
+}
+
+.material-card h3 {
+    color: #ffd700;
+    margin-bottom: 8px;
+}
+
+.material-card .instructor {
+    color: #bbb;
+    margin-bottom: 18px;
+}
+
+
+.read-btn {
+    background: blue;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-btn:hover {
+    background: #45a049;
+}
